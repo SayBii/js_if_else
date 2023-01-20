@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade 03</title>
+</head>
+<body>
+    <h1>Idade</h1>
+
+    <div id = "nome1"></div>
+    <div id = "idade1"></div>
+    <div id = "nome2"></div>
+    <div id = "idade2"></div>
+    <p> a pessoa mais nova é:<div id="resul"></div></p>
+    <script>
+    let nome1=(prompt("Digite o nome da primeira pessoa"));
+    let nome2=(prompt("Digite o nome da segunda pessoa"));
+    let idade1=Number(prompt("Digite o ano que nasceu a primeira pessoa "));
+    let idade2=Number(prompt("Digite o ano que nasceu a segunda pessoa"));
+
+    let ano1= 2023 - idade1;
+    let ano2= 2023 - idade2;
+    let msg;
+
+    if (ano1  < ano2){ 
+        msg = nome1
+
+    }else{ 
+        msg= nome2
+    }
+
+document.getElementById("nome1").innerHTML = nome1;
+document.getElementById("idade1").innerHTML = ano1;
+document.getElementById("nome2").innerHTML = nome2;
+document.getElementById("idade2").innerHTML = ano2;
+document.getElementById("resul").innerHTML= msg;
+
+
+
+
+    </script>
+
+
+
+
+</body>
+</html>
